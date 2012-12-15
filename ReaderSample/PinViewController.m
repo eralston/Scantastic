@@ -8,7 +8,12 @@
 
 #import "PinViewController.h"
 
+#import "ScanItemViewController.h"
+
 @interface PinViewController ()
+{
+    
+}
 
 @end
 
@@ -33,6 +38,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)onPinEntered:(id)sender {
+    //advance to the PIN screen
+    ScanItemViewController *scanView = [[ScanItemViewController alloc] init];
+    [[self navigationController] pushViewController:scanView animated:YES];
 }
 
 @end

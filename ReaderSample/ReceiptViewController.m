@@ -9,6 +9,10 @@
 #import "ReceiptViewController.h"
 
 @interface ReceiptViewController ()
+{
+    IBOutlet UITableView *_optionsTable;
+    IBOutlet UILabel *_timerLbl;
+}
 
 @end
 
@@ -33,6 +37,43 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)startOver
+{
+    [[self navigationController] popToRootViewControllerAnimated:YES];
+}
+
+- (void)dealloc {
+    [_optionsTable release];
+    [_timerLbl release];
+    [super dealloc];
+}
+
+#pragma mark - UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *tableCellId = @"ReceiptTableCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableCellId];
+    if(!cell)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableCellId];
+
+    [[cell textLabel] setText:@"Hello World!"];
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 4;
+}
+
+#pragma mark UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self startOver];
 }
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReceiptViewController : UIViewController
+@interface ReceiptViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

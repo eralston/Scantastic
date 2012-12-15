@@ -8,6 +8,8 @@
 
 #import "ScanItemViewController.h"
 
+#import "ReceiptViewController.h"
+
 @interface ScanItemViewController ()
 
 @end
@@ -33,6 +35,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)onAllItemsScanned:(id)sender {
+    //advance to the PIN screen
+    ReceiptViewController *receiptView = [[ReceiptViewController alloc] init];
+    [[self navigationController] pushViewController:receiptView animated:YES];
 }
 
 @end
