@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Transaction.h"
+
 @interface ReceiptViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) Transaction *transaction;
 
 @end

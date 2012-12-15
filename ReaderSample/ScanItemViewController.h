@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Transaction.h"
+
 @interface ScanItemViewController : UIViewController
+
+@property (nonatomic, strong) Transaction *transaction;
 
 @end

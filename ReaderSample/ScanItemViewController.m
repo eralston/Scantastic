@@ -54,6 +54,7 @@
 - (IBAction)onAllItemsScanned:(id)sender {
     //advance to the PIN screen
     ReceiptViewController *receiptView = [[ReceiptViewController alloc] init];
+    [receiptView setTransaction:[self transaction]];
     [[self navigationController] pushViewController:receiptView animated:YES];
 }
 

@@ -8,6 +8,7 @@
 
 #import "StartViewController.h"
 
+#import "Library.h"
 #import "PinViewController.h"
 
 @interface StartViewController ()
@@ -46,6 +47,12 @@
 - (IBAction)onScanButtonPressed:(id)sender {
     //advance to the PIN screen
     PinViewController *pinView = [[PinViewController alloc] init];
+    
+    Library *library = [Library shared];
+    Patron *patron = [library findPatronByIdentifier:@"a"];
+    [pinView setTransaction:[library insertNewTransactionForPatron:patron]];
+    [library save];
+    
     [[self navigationController] pushViewController:pinView animated:YES];
 }
 

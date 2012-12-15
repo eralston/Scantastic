@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Transaction.h"
+
 @interface PinViewController : UIViewController
+
+@property (nonatomic, strong) Transaction *transaction;
 
 @end
