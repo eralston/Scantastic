@@ -8,6 +8,7 @@
 
 #import "ScanItemViewController.h"
 
+#import "Item.h"
 #import "Library.h"
 #import "ReceiptViewController.h"
 #import "ZBarReaderView.h"
@@ -17,6 +18,7 @@
 {
     ZBarReaderView *_reader;
     __weak IBOutlet ZBarReaderView *_scanner;
+    __weak IBOutlet UITableView *_table;
 }
 
 @end
@@ -78,22 +80,7 @@
     [[self navigationController] pushViewController:receiptView animated:YES];
 }
 
-- (void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image
-{
-    
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    id<NSFastEnumeration> results =
-    [info objectForKey: ZBarReaderControllerResults];
-    ZBarSymbol *symbol = nil;
-    for(symbol in results)
-        // EXAMPLE: just grab the first barcode
-        break;
-    
-    // EXAMPLE: do something useful with the barcode data
-    NSString *text = symbol.data;
+- (void)barcodeScanned:(NSString *)text {
     Library *library = [Library shared];
     Item *item = [library findItemByIdentifier:text];
     
@@ -107,7 +94,45 @@
     } else {
         NSLog(@"Could not find patron with identifier %@", text);
     }
+}
+
+#pragma mark - Reader Delegate
+
+- (void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image
+{
+    ZBarSymbol *symbol = nil;
+    for(symbol in symbols)
+        // EXAMPLE: just grab the first barcode
+        break;
+    [self barcodeScanned:[symbol data]];
     
+    [_table reloadData];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    
+}
+
+#pragma mark - Table Data Source
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[[self transaction] items] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *tableCellId = @"ScanTableCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableCellId];
+    if(!cell)
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableCellId];
+    
+    NSArray *array = [[[self transaction] items] allObjects];
+    Item *item = [array objectAtIndex:[indexPath row]];
+    [[cell textLabel] setText:[item name]];
+    
+    return cell;
 }
 
 @end

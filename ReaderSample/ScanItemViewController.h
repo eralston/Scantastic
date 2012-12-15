@@ -11,7 +11,7 @@
 #import "Transaction.h"
 #import "ZBarReaderController.h"
 
-@interface ScanItemViewController : UIViewController <ZBarReaderViewDelegate>
+@interface ScanItemViewController : UIViewController <ZBarReaderViewDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) Transaction *transaction;
 

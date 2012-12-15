@@ -116,15 +116,10 @@
         [self insertNewPatronWithName:@"Jon" identifier:@"c" pin:@"1234"];
         [self insertNewPatronWithName:@"Shenoa" identifier:@"d" pin:@"1234"];
         
-        [self insertNewItemWithName:@"Batman: The Dark Knight Returns" identifier:@"1"];
-        [self insertNewItemWithName:@"Watchmen" identifier:@""];
-        [self insertNewItemWithName:@"V for Vendetta" identifier:@""];
-        
-        // try making a transaction
-        Patron *patron = [self findPatronByIdentifier:@"b"];
-        Transaction *trans = [self insertNewTransactionForPatron:patron];
-        Item *item = [self findItemByIdentifier:@"1"];
-        [trans addItemsObject:item];
+        [self insertNewItemWithName:@"Batman: The Dark Knight Returns" identifier:@"9781563893421"];
+        [self insertNewItemWithName:@"Watchmen" identifier:@"9780930289232"];
+        [self insertNewItemWithName:@"V for Vendetta" identifier:@"9781401208417"];
+        [self insertNewItemWithName:@"CSS3 for Web Designers" identifier:@"9780984442522"];
         
         [self save];
     }
