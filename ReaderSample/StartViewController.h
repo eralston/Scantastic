@@ -10,6 +10,6 @@
 
 #import "ZBarReaderViewController.h"
 
-@interface StartViewController : ZBarReaderViewController <ZBarReaderDelegate>
+@interface StartViewController : UIViewController <ZBarReaderViewDelegate>
 
 @end

@@ -23,6 +23,7 @@
     // Override point for customization after application launch.
     
     UINavigationController *nav = [[UINavigationController alloc] init];
+    [nav setWantsFullScreenLayout:YES];
     StartViewController *start = [[StartViewController alloc] init];
     [nav pushViewController:start animated:NO];
     self.window.rootViewController = nav;

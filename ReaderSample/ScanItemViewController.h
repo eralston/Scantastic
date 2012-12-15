@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "Transaction.h"
+#import "ZBarReaderController.h"
 
-@interface ScanItemViewController : UIViewController
+@interface ScanItemViewController : UIViewController <ZBarReaderViewDelegate>
 
 @property (nonatomic, strong) Transaction *transaction;
 

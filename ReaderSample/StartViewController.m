@@ -13,7 +13,7 @@
 
 @interface StartViewController ()
 {
-    
+    __weak IBOutlet ZBarReaderView *_scanner;
 }
 
 @end
@@ -36,8 +36,17 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self setShowsZBarControls:NO];
-    [self setReaderDelegate:self];
+    [_scanner setReaderDelegate:self];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [_scanner start];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [_scanner stop];
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,7 +67,34 @@
     [[self navigationController] pushViewController:pinView animated:YES];
 }
 
+- (void)barcodeScanned:(NSString *)text
+{
+    // EXAMPLE: do something useful with the barcode data
+    Library *library = [Library shared];
+    Patron *patron = [library findPatronByIdentifier:text];
+    
+    if(patron){
+        NSLog(@"Found patron %@", [patron name]);
+        
+        PinViewController *pinView = [[PinViewController alloc] init];
+        [pinView setTransaction:[library insertNewTransactionForPatron:patron]];
+        [library save];
+        [[self navigationController] pushViewController:pinView animated:YES];
+    } else {
+        NSLog(@"Could not find patron with identifier %@", text);
+    }
+}
+
 #pragma  mark - Image Picking
+
+- (void)readerView:(ZBarReaderView *)readerView didReadSymbols:(ZBarSymbolSet *)symbols fromImage:(UIImage *)image
+{
+    ZBarSymbol *symbol = nil;
+    for(symbol in symbols)
+        // EXAMPLE: just grab the first barcode
+        break;
+    [self barcodeScanned:[symbol data]];
+}
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
@@ -69,21 +105,7 @@
         // EXAMPLE: just grab the first barcode
         break;
     
-    // EXAMPLE: do something useful with the barcode data
-    NSString *text = symbol.data;
-    Library *library = [Library shared];
-    Patron *patron = [library findPatronByIdentifier:text];
-    
-    if(patron){
-        NSLog(@"Found patron %@", [patron name]);
-    
-        PinViewController *pinView = [[PinViewController alloc] init];
-        [pinView setTransaction:[library insertNewTransactionForPatron:patron]];
-        [library save];
-        [[self navigationController] pushViewController:pinView animated:YES];
-    } else {
-        NSLog(@"Could not find patron with identifier %@", text);
-    }
+
     
 }
 

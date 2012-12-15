@@ -15,6 +15,7 @@
 @interface PinViewController ()
 {
     __weak IBOutlet UITextField *_text;
+    __weak IBOutlet UILabel *_patronTxt;
 }
 
 @end
@@ -40,6 +41,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [_patronTxt setText:[NSString stringWithFormat:@"Welcome, %@", [[transaction patron] name]]];
 }
 
 - (void)didReceiveMemoryWarning
