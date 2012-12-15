@@ -51,12 +51,12 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<string key="IBUIText">Please Scan Barcode</string>
-						<object class="NSColor" key="IBUITextColor" id="883696822">
+						<object class="NSColor" key="IBUITextColor" id="571666529">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MQA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
-						<object class="NSColor" key="IBUIShadowColor" id="221724818">
+						<object class="NSColor" key="IBUIShadowColor" id="877483353">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
 						</object>
@@ -73,7 +73,7 @@
 						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
-					<object class="IBUIView" id="163649573">
+					<object class="IBUIView" id="665408199">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">306</int>
 						<array class="NSMutableArray" key="NSSubviews"/>
@@ -82,14 +82,14 @@
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="824722953"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="221724818"/>
+						<reference key="IBUIBackgroundColor" ref="877483353"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 					</object>
 					<object class="IBUIButton" id="411631194">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{621, 941}, {127, 44}}</string>
+						<string key="NSFrame">{{621, 876}, {127, 44}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -99,7 +99,7 @@
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
 						<string key="IBUINormalTitle">Scan All Items</string>
-						<reference key="IBUIHighlightedTitleColor" ref="883696822"/>
+						<reference key="IBUIHighlightedTitleColor" ref="571666529"/>
 						<object class="NSColor" key="IBUINormalTitleColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
@@ -118,14 +118,14 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUITableView" id="790156866">
+					<object class="IBUITableView" id="192051751">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
 						<string key="NSFrame">{{20, 563}, {728, 236}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
-						<reference key="IBUIBackgroundColor" ref="883696822"/>
+						<reference key="IBUIBackgroundColor" ref="571666529"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<bool key="IBUIAlwaysBounceVertical">YES</bool>
@@ -140,7 +140,7 @@
 				<string key="NSFrameSize">{768, 1004}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="163649573"/>
+				<reference key="NSNextKeyView" ref="665408199"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -166,7 +166,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">_scanner</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="163649573"/>
+						<reference key="destination" ref="665408199"/>
 					</object>
 					<int key="connectionID">28</int>
 				</object>
@@ -174,7 +174,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">_table</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="790156866"/>
+						<reference key="destination" ref="192051751"/>
 					</object>
 					<int key="connectionID">32</int>
 				</object>
@@ -190,7 +190,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
-						<reference key="source" ref="790156866"/>
+						<reference key="source" ref="192051751"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">30</int>
@@ -198,7 +198,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="790156866"/>
+						<reference key="source" ref="192051751"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">31</int>
@@ -227,10 +227,10 @@
 						<int key="objectID">2</int>
 						<reference key="object" ref="766721923"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="411631194"/>
-							<reference ref="790156866"/>
+							<reference ref="192051751"/>
 							<reference ref="824722953"/>
-							<reference ref="163649573"/>
+							<reference ref="665408199"/>
+							<reference ref="411631194"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -241,13 +241,13 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="163649573"/>
+						<reference key="object" ref="665408199"/>
 						<array class="NSMutableArray" key="children"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">29</int>
-						<reference key="object" ref="790156866"/>
+						<reference key="object" ref="192051751"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">

@@ -44,6 +44,8 @@
     
     [_scanner setReaderDelegate:self];
     
+    [_table setEditing:YES];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -133,6 +135,18 @@
     [[cell textLabel] setText:[item name]];
     
     return cell;
+}
+
+#pragma mark - Table Delegate
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 @end
