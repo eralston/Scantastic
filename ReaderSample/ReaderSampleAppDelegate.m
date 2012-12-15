@@ -8,6 +8,8 @@
 #import "ReaderSampleAppDelegate.h"
 
 #import "ReaderSampleViewController.h"
+#import "StartViewController.h"
+#import "Library.h"
 
 @implementation ReaderSampleAppDelegate
 
@@ -19,8 +21,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-     
-    self.window.rootViewController = self.viewController;
+    
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    StartViewController *start = [[StartViewController alloc] init];
+    [nav pushViewController:start animated:NO];
+    self.window.rootViewController = nav;
+    
+    [[Library shared] seedIfEmpty];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

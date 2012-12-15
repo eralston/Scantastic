@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Transaction;
 
 @interface Patron : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * identifier;
 @property (nonatomic, retain) NSString * pin;
-@property (nonatomic, retain) NSManagedObject *transactions;
+@property (nonatomic, retain) Transaction *transactions;
 
 @end

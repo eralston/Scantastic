@@ -7,12 +7,13 @@
 //
 
 #import "Item.h"
+#import "Transaction.h"
 
 
 @implementation Item
 
 @dynamic name;
-@dynamic identitifer;
-@dynamic transations;
+@dynamic identifier;
+@dynamic transactions;
 
 @end

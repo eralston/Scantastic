@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Item" representedClassName="Item" syncable="YES">
-        <attribute name="identitifer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="transations" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="items" inverseEntity="Transaction" syncable="YES"/>
+        <relationship name="transactions" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Transaction" inverseName="items" inverseEntity="Transaction" syncable="YES"/>
     </entity>
     <entity name="Patron" representedClassName="Patron" syncable="YES">
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,12 +13,12 @@
     </entity>
     <entity name="Transaction" representedClassName="Transaction" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="items" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="transations" inverseEntity="Item" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="transactions" inverseEntity="Item" syncable="YES"/>
         <relationship name="patron" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Patron" inverseName="transactions" inverseEntity="Patron" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Patron" positionX="160" positionY="192" width="128" height="105"/>
-        <element name="Item" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="Transaction" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Item" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Patron" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Transaction" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

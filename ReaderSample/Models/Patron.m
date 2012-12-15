@@ -7,6 +7,7 @@
 //
 
 #import "Patron.h"
+#import "Transaction.h"
 
 
 @implementation Patron

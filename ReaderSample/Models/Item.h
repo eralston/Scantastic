@@ -9,11 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+@class Transaction;
 
 @interface Item : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSString * identitifer;
-@property (nonatomic, retain) NSManagedObject *transations;
+@property (nonatomic, retain) NSString * identifier;
+@property (nonatomic, retain) Transaction *transactions;
 
 @end

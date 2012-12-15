@@ -14,7 +14,15 @@
 @interface Transaction : NSManagedObject
 
 @property (nonatomic, retain) NSDate * date;
-@property (nonatomic, retain) Item *items;
+@property (nonatomic, retain) NSSet *items;
 @property (nonatomic, retain) Patron *patron;
+@end
+
+@interface Transaction (CoreDataGeneratedAccessors)
+
+- (void)addItemsObject:(Item *)value;
+- (void)removeItemsObject:(Item *)value;
+- (void)addItems:(NSSet *)values;
+- (void)removeItems:(NSSet *)values;
 
 @end

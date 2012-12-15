@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		24A81335167C30AD0057CBAB /* Library.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24A81333167C30AD0057CBAB /* Library.xcdatamodeld */; };
-		24A81338167C3ED70057CBAB /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A81337167C3ED70057CBAB /* Patron.m */; };
-		24A8133B167C3ED80057CBAB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8133A167C3ED80057CBAB /* Item.m */; };
-		24A81342167C3F2A0057CBAB /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A81341167C3F2A0057CBAB /* Transaction.m */; };
 		24A81344167C3F620057CBAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A81343167C3F620057CBAB /* CoreData.framework */; };
 		24A8134A167C40280057CBAB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A81349167C40280057CBAB /* Default-568h@2x.png */; };
 		24A8134E167C42450057CBAB /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8134C167C42450057CBAB /* StartViewController.m */; };
@@ -21,6 +18,10 @@
 		24A81359167C425B0057CBAB /* ScanItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A81357167C425B0057CBAB /* ScanItemViewController.xib */; };
 		24A8135D167C42650057CBAB /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8135B167C42650057CBAB /* ReceiptViewController.m */; };
 		24A8135E167C42650057CBAB /* ReceiptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A8135C167C42650057CBAB /* ReceiptViewController.xib */; };
+		24A813B8167C46160057CBAB /* Library.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813B7167C46160057CBAB /* Library.m */; };
+		24A813BB167C55AB0057CBAB /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813BA167C55AB0057CBAB /* Transaction.m */; };
+		24A813BE167C55AC0057CBAB /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813BD167C55AC0057CBAB /* Patron.m */; };
+		24A813C1167C55AC0057CBAB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813C0167C55AC0057CBAB /* Item.m */; };
 		DC8F289413579EFF005B8862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289313579EFF005B8862 /* UIKit.framework */; };
 		DC8F289613579EFF005B8862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289513579EFF005B8862 /* Foundation.framework */; };
 		DC8F289813579EFF005B8862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289713579EFF005B8862 /* CoreGraphics.framework */; };
@@ -44,12 +45,6 @@
 
 /* Begin PBXFileReference section */
 		24A81334167C30AD0057CBAB /* Library.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Library.xcdatamodel; sourceTree = "<group>"; };
-		24A81336167C3ED70057CBAB /* Patron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Patron.h; path = Models/Patron.h; sourceTree = "<group>"; };
-		24A81337167C3ED70057CBAB /* Patron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patron.m; path = Models/Patron.m; sourceTree = "<group>"; };
-		24A81339167C3ED80057CBAB /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Models/Item.h; sourceTree = "<group>"; };
-		24A8133A167C3ED80057CBAB /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
-		24A81340167C3F2A0057CBAB /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transaction.h; path = Models/Transaction.h; sourceTree = "<group>"; };
-		24A81341167C3F2A0057CBAB /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transaction.m; path = Models/Transaction.m; sourceTree = "<group>"; };
 		24A81343167C3F620057CBAB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		24A81349167C40280057CBAB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		24A8134B167C42450057CBAB /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
@@ -64,6 +59,14 @@
 		24A8135A167C42650057CBAB /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
 		24A8135B167C42650057CBAB /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptViewController.m; sourceTree = "<group>"; };
 		24A8135C167C42650057CBAB /* ReceiptViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptViewController.xib; sourceTree = "<group>"; };
+		24A813B6167C46160057CBAB /* Library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Library.h; sourceTree = "<group>"; };
+		24A813B7167C46160057CBAB /* Library.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Library.m; sourceTree = "<group>"; };
+		24A813B9167C55AB0057CBAB /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Transaction.h; path = Models/Transaction.h; sourceTree = "<group>"; };
+		24A813BA167C55AB0057CBAB /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transaction.m; path = Models/Transaction.m; sourceTree = "<group>"; };
+		24A813BC167C55AC0057CBAB /* Patron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Patron.h; path = Models/Patron.h; sourceTree = "<group>"; };
+		24A813BD167C55AC0057CBAB /* Patron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patron.m; path = Models/Patron.m; sourceTree = "<group>"; };
+		24A813BF167C55AC0057CBAB /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Models/Item.h; sourceTree = "<group>"; };
+		24A813C0167C55AC0057CBAB /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
 		DC8F288F13579EFF005B8862 /* ReaderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F289313579EFF005B8862 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC8F289513579EFF005B8862 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,13 +136,15 @@
 		24A8133F167C3EF10057CBAB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				24A81340167C3F2A0057CBAB /* Transaction.h */,
-				24A81341167C3F2A0057CBAB /* Transaction.m */,
 				24A81333167C30AD0057CBAB /* Library.xcdatamodeld */,
-				24A81339167C3ED80057CBAB /* Item.h */,
-				24A8133A167C3ED80057CBAB /* Item.m */,
-				24A81336167C3ED70057CBAB /* Patron.h */,
-				24A81337167C3ED70057CBAB /* Patron.m */,
+				24A813BF167C55AC0057CBAB /* Item.h */,
+				24A813C0167C55AC0057CBAB /* Item.m */,
+				24A813BC167C55AC0057CBAB /* Patron.h */,
+				24A813BD167C55AC0057CBAB /* Patron.m */,
+				24A813B9167C55AB0057CBAB /* Transaction.h */,
+				24A813BA167C55AB0057CBAB /* Transaction.m */,
+				24A813B6167C46160057CBAB /* Library.h */,
+				24A813B7167C46160057CBAB /* Library.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 		DC8F288613579EFF005B8862 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "ZBar Consulting Services";
 			};
 			buildConfigurationList = DC8F288913579EFF005B8862 /* Build configuration list for PBXProject "ReaderSample" */;
@@ -356,13 +362,14 @@
 				DC8F28A413579EFF005B8862 /* ReaderSampleAppDelegate.m in Sources */,
 				DC8F28AA13579EFF005B8862 /* ReaderSampleViewController.m in Sources */,
 				24A81335167C30AD0057CBAB /* Library.xcdatamodeld in Sources */,
-				24A81338167C3ED70057CBAB /* Patron.m in Sources */,
-				24A8133B167C3ED80057CBAB /* Item.m in Sources */,
-				24A81342167C3F2A0057CBAB /* Transaction.m in Sources */,
 				24A8134E167C42450057CBAB /* StartViewController.m in Sources */,
 				24A81353167C42510057CBAB /* PinViewController.m in Sources */,
 				24A81358167C425B0057CBAB /* ScanItemViewController.m in Sources */,
 				24A8135D167C42650057CBAB /* ReceiptViewController.m in Sources */,
+				24A813B8167C46160057CBAB /* Library.m in Sources */,
+				24A813BB167C55AB0057CBAB /* Transaction.m in Sources */,
+				24A813BE167C55AC0057CBAB /* Patron.m in Sources */,
+				24A813C1167C55AC0057CBAB /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +415,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -422,7 +429,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 			};
@@ -436,7 +443,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReaderSample/ReaderSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "ReaderSample/ReaderSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
@@ -454,7 +463,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ReaderSample/ReaderSample-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "ReaderSample/ReaderSample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
