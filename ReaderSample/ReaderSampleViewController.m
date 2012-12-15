@@ -29,7 +29,6 @@
     // present and release the controller
     [self presentViewController: reader
                        animated: YES completion:nil];
-    [reader release];
 }
 
 - (void) imagePickerController: (UIImagePickerController*) reader
@@ -57,12 +56,6 @@
 - (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) orient
 {
     return(YES);
-}
-
-- (void) dealloc {
-    self.resultImage = nil;
-    self.resultText = nil;
-    [super dealloc];
 }
 
 @end

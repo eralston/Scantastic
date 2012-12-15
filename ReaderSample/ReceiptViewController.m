@@ -44,12 +44,6 @@
     [[self navigationController] popToRootViewControllerAnimated:YES];
 }
 
-- (void)dealloc {
-    [_optionsTable release];
-    [_timerLbl release];
-    [super dealloc];
-}
-
 #pragma mark - UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
