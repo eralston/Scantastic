@@ -22,6 +22,7 @@
 		24A813BB167C55AB0057CBAB /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813BA167C55AB0057CBAB /* Transaction.m */; };
 		24A813BE167C55AC0057CBAB /* Patron.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813BD167C55AC0057CBAB /* Patron.m */; };
 		24A813C1167C55AC0057CBAB /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A813C0167C55AC0057CBAB /* Item.m */; };
+		24EE85AE167D0FE400E87E99 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24EE85AD167D0FE400E87E99 /* CustomNavigationController.m */; };
 		DC8F289413579EFF005B8862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289313579EFF005B8862 /* UIKit.framework */; };
 		DC8F289613579EFF005B8862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289513579EFF005B8862 /* Foundation.framework */; };
 		DC8F289813579EFF005B8862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289713579EFF005B8862 /* CoreGraphics.framework */; };
@@ -67,13 +68,15 @@
 		24A813BD167C55AC0057CBAB /* Patron.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Patron.m; path = Models/Patron.m; sourceTree = "<group>"; };
 		24A813BF167C55AC0057CBAB /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Item.h; path = Models/Item.h; sourceTree = "<group>"; };
 		24A813C0167C55AC0057CBAB /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Item.m; path = Models/Item.m; sourceTree = "<group>"; };
-		DC8F288F13579EFF005B8862 /* ReaderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24EE85AC167D0FE400E87E99 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		24EE85AD167D0FE400E87E99 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		DC8F288F13579EFF005B8862 /* Scantastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scantastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F289313579EFF005B8862 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC8F289513579EFF005B8862 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC8F289713579EFF005B8862 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DC8F289B13579EFF005B8862 /* ReaderSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReaderSample-Info.plist"; sourceTree = "<group>"; };
+		DC8F289B13579EFF005B8862 /* Scantastic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Scantastic-Info.plist"; sourceTree = "<group>"; };
 		DC8F289D13579EFF005B8862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DC8F289F13579EFF005B8862 /* ReaderSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReaderSample-Prefix.pch"; sourceTree = "<group>"; };
+		DC8F289F13579EFF005B8862 /* Scantastic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scantastic-Prefix.pch"; sourceTree = "<group>"; };
 		DC8F28A013579EFF005B8862 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC8F28A213579EFF005B8862 /* ReaderSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReaderSampleAppDelegate.h; sourceTree = "<group>"; };
 		DC8F28A313579EFF005B8862 /* ReaderSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReaderSampleAppDelegate.m; sourceTree = "<group>"; };
@@ -163,7 +166,7 @@
 		DC8F289013579EFF005B8862 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC8F288F13579EFF005B8862 /* ReaderSample.app */,
+				DC8F288F13579EFF005B8862 /* Scantastic.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +198,8 @@
 				DC8F28A913579EFF005B8862 /* ReaderSampleViewController.m */,
 				DC8F28AB13579EFF005B8862 /* ReaderSampleViewController.xib */,
 				DC8F289A13579EFF005B8862 /* Supporting Files */,
+				24EE85AC167D0FE400E87E99 /* CustomNavigationController.h */,
+				24EE85AD167D0FE400E87E99 /* CustomNavigationController.m */,
 				24A8134B167C42450057CBAB /* StartViewController.h */,
 				24A8134C167C42450057CBAB /* StartViewController.m */,
 				24A8134D167C42450057CBAB /* StartViewController.xib */,
@@ -214,9 +219,9 @@
 		DC8F289A13579EFF005B8862 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DC8F289B13579EFF005B8862 /* ReaderSample-Info.plist */,
+				DC8F289B13579EFF005B8862 /* Scantastic-Info.plist */,
 				DC8F289C13579EFF005B8862 /* InfoPlist.strings */,
-				DC8F289F13579EFF005B8862 /* ReaderSample-Prefix.pch */,
+				DC8F289F13579EFF005B8862 /* Scantastic-Prefix.pch */,
 				DC8F28A013579EFF005B8862 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -288,9 +293,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC8F288E13579EFF005B8862 /* ReaderSample */ = {
+		DC8F288E13579EFF005B8862 /* Scantastic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC8F28B013579F00005B8862 /* Build configuration list for PBXNativeTarget "ReaderSample" */;
+			buildConfigurationList = DC8F28B013579F00005B8862 /* Build configuration list for PBXNativeTarget "Scantastic" */;
 			buildPhases = (
 				DC8F288B13579EFF005B8862 /* Sources */,
 				DC8F288C13579EFF005B8862 /* Frameworks */,
@@ -300,9 +305,9 @@
 			);
 			dependencies = (
 			);
-			name = ReaderSample;
+			name = Scantastic;
 			productName = ReaderSample;
-			productReference = DC8F288F13579EFF005B8862 /* ReaderSample.app */;
+			productReference = DC8F288F13579EFF005B8862 /* Scantastic.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +319,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "ZBar Consulting Services";
 			};
-			buildConfigurationList = DC8F288913579EFF005B8862 /* Build configuration list for PBXProject "ReaderSample" */;
+			buildConfigurationList = DC8F288913579EFF005B8862 /* Build configuration list for PBXProject "Scantastic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -326,7 +331,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC8F288E13579EFF005B8862 /* ReaderSample */,
+				DC8F288E13579EFF005B8862 /* Scantastic */,
 			);
 		};
 /* End PBXProject section */
@@ -370,6 +375,7 @@
 				24A813BB167C55AB0057CBAB /* Transaction.m in Sources */,
 				24A813BE167C55AC0057CBAB /* Patron.m in Sources */,
 				24A813C1167C55AC0057CBAB /* Item.m in Sources */,
+				24EE85AE167D0FE400E87E99 /* CustomNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,15 +449,15 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ReaderSample/ReaderSample-Prefix.pch";
+				GCC_PREFIX_HEADER = "ReaderSample/Scantastic-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "ReaderSample/ReaderSample-Info.plist";
+				INFOPLIST_FILE = "ReaderSample/Scantastic-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Scantastic;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,15 +470,15 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ReaderSample/ReaderSample-Prefix.pch";
+				GCC_PREFIX_HEADER = "ReaderSample/Scantastic-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "ReaderSample/ReaderSample-Info.plist";
+				INFOPLIST_FILE = "ReaderSample/Scantastic-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Scantastic;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -482,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC8F288913579EFF005B8862 /* Build configuration list for PBXProject "ReaderSample" */ = {
+		DC8F288913579EFF005B8862 /* Build configuration list for PBXProject "Scantastic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC8F28AE13579F00005B8862 /* Debug */,
@@ -491,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC8F28B013579F00005B8862 /* Build configuration list for PBXNativeTarget "ReaderSample" */ = {
+		DC8F28B013579F00005B8862 /* Build configuration list for PBXNativeTarget "Scantastic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC8F28B113579F00005B8862 /* Debug */,

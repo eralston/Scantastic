@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC8F288E13579EFF005B8862"
-               BuildableName = "ReaderSample.app"
-               BlueprintName = "ReaderSample"
-               ReferencedContainer = "container:ReaderSample.xcodeproj">
+               BuildableName = "Scantastic.app"
+               BlueprintName = "Scantastic"
+               ReferencedContainer = "container:Scantastic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC8F288E13579EFF005B8862"
-            BuildableName = "ReaderSample.app"
-            BlueprintName = "ReaderSample"
-            ReferencedContainer = "container:ReaderSample.xcodeproj">
+            BuildableName = "Scantastic.app"
+            BlueprintName = "Scantastic"
+            ReferencedContainer = "container:Scantastic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC8F288E13579EFF005B8862"
-            BuildableName = "ReaderSample.app"
-            BlueprintName = "ReaderSample"
-            ReferencedContainer = "container:ReaderSample.xcodeproj">
+            BuildableName = "Scantastic.app"
+            BlueprintName = "Scantastic"
+            ReferencedContainer = "container:Scantastic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

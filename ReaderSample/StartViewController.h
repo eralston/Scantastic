@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StartViewController : UIViewController
+#import "ZBarReaderViewController.h"
+
+@interface StartViewController : ZBarReaderViewController <ZBarReaderDelegate>
 
 @end

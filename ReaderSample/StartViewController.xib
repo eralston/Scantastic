@@ -104,7 +104,7 @@
 						</object>
 					</object>
 				</array>
-				<string key="NSFrame">{{0, 20}, {768, 1004}}</string>
+				<string key="NSFrameSize">{768, 1004}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="414566896"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
@@ -115,9 +115,6 @@
 					</object>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>
 		</array>

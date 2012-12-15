@@ -27,6 +27,7 @@
     [nav pushViewController:start animated:NO];
     self.window.rootViewController = nav;
     
+    [[Library shared] deleteEntireDatabase];
     [[Library shared] seedIfEmpty];
     
     [self.window makeKeyAndVisible];

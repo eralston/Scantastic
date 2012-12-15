@@ -111,7 +111,7 @@
     NSArray *array = [self executeFetchRequest:request];
     
     if([array count] == 0) {
-        [self insertNewPatronWithName:@"Erik" identifier:@"a" pin:@"1234"];
+        [self insertNewPatronWithName:@"Erik" identifier:@"0050000303021" pin:@"1234"];
         [self insertNewPatronWithName:@"Bruce" identifier:@"b" pin:@"1234"];
         [self insertNewPatronWithName:@"Jon" identifier:@"c" pin:@"1234"];
         [self insertNewPatronWithName:@"Shenoa" identifier:@"d" pin:@"1234"];

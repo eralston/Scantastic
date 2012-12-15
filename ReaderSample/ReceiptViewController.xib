@@ -84,13 +84,14 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<bool key="IBUIAlwaysBounceVertical">YES</bool>
-						<int key="IBUIStyle">1</int>
-						<int key="IBUISeparatorStyle">2</int>
+						<int key="IBUISeparatorStyle">1</int>
 						<int key="IBUISectionIndexMinimumDisplayRowCount">0</int>
+						<bool key="IBUIAllowsSelectionDuringEditing">YES</bool>
+						<bool key="IBUIAllowsMultipleSelectionDuringEditing">YES</bool>
 						<bool key="IBUIShowsSelectionImmediatelyOnTouchBegin">YES</bool>
 						<float key="IBUIRowHeight">44</float>
-						<float key="IBUISectionHeaderHeight">10</float>
-						<float key="IBUISectionFooterHeight">10</float>
+						<float key="IBUISectionHeaderHeight">22</float>
+						<float key="IBUISectionFooterHeight">22</float>
 					</object>
 					<object class="IBUILabel" id="460341489">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -207,7 +208,7 @@
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
 					</object>
 				</array>
-				<string key="NSFrame">{{0, 20}, {768, 1004}}</string>
+				<string key="NSFrameSize">{768, 1004}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="561628384"/>
@@ -219,9 +220,6 @@
 					</object>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
-					<int key="IBUIStatusBarStyle">2</int>
-				</object>
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>
 		</array>
