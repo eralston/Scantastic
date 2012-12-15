@@ -1,4 +1,4 @@
-iScan
+Scantastic
 =====
 
-A basic checkout app for iOS
+A basic self-checkout app for borrowing anything with a barcode for iOS
