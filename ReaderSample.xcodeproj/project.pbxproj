@@ -13,6 +13,14 @@
 		24A81342167C3F2A0057CBAB /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A81341167C3F2A0057CBAB /* Transaction.m */; };
 		24A81344167C3F620057CBAB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A81343167C3F620057CBAB /* CoreData.framework */; };
 		24A8134A167C40280057CBAB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A81349167C40280057CBAB /* Default-568h@2x.png */; };
+		24A8134E167C42450057CBAB /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8134C167C42450057CBAB /* StartViewController.m */; };
+		24A8134F167C42450057CBAB /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A8134D167C42450057CBAB /* StartViewController.xib */; };
+		24A81353167C42510057CBAB /* PinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A81351167C42510057CBAB /* PinViewController.m */; };
+		24A81354167C42510057CBAB /* PinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A81352167C42510057CBAB /* PinViewController.xib */; };
+		24A81358167C425B0057CBAB /* ScanItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A81356167C425B0057CBAB /* ScanItemViewController.m */; };
+		24A81359167C425B0057CBAB /* ScanItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A81357167C425B0057CBAB /* ScanItemViewController.xib */; };
+		24A8135D167C42650057CBAB /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A8135B167C42650057CBAB /* ReceiptViewController.m */; };
+		24A8135E167C42650057CBAB /* ReceiptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A8135C167C42650057CBAB /* ReceiptViewController.xib */; };
 		DC8F289413579EFF005B8862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289313579EFF005B8862 /* UIKit.framework */; };
 		DC8F289613579EFF005B8862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289513579EFF005B8862 /* Foundation.framework */; };
 		DC8F289813579EFF005B8862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8F289713579EFF005B8862 /* CoreGraphics.framework */; };
@@ -44,6 +52,18 @@
 		24A81341167C3F2A0057CBAB /* Transaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Transaction.m; path = Models/Transaction.m; sourceTree = "<group>"; };
 		24A81343167C3F620057CBAB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		24A81349167C40280057CBAB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		24A8134B167C42450057CBAB /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		24A8134C167C42450057CBAB /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		24A8134D167C42450057CBAB /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		24A81350167C42510057CBAB /* PinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinViewController.h; sourceTree = "<group>"; };
+		24A81351167C42510057CBAB /* PinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinViewController.m; sourceTree = "<group>"; };
+		24A81352167C42510057CBAB /* PinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PinViewController.xib; sourceTree = "<group>"; };
+		24A81355167C425B0057CBAB /* ScanItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanItemViewController.h; sourceTree = "<group>"; };
+		24A81356167C425B0057CBAB /* ScanItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanItemViewController.m; sourceTree = "<group>"; };
+		24A81357167C425B0057CBAB /* ScanItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanItemViewController.xib; sourceTree = "<group>"; };
+		24A8135A167C42650057CBAB /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
+		24A8135B167C42650057CBAB /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptViewController.m; sourceTree = "<group>"; };
+		24A8135C167C42650057CBAB /* ReceiptViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReceiptViewController.xib; sourceTree = "<group>"; };
 		DC8F288F13579EFF005B8862 /* ReaderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReaderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8F289313579EFF005B8862 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DC8F289513579EFF005B8862 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				24A81349167C40280057CBAB /* Default-568h@2x.png */,
-				24A81343167C3F620057CBAB /* CoreData.framework */,
 				DC8F289913579EFF005B8862 /* ReaderSample */,
 				DC8F28B31357A29D005B8862 /* ZBarSDK */,
 				DC8F289213579EFF005B8862 /* Frameworks */,
@@ -147,6 +166,7 @@
 		DC8F289213579EFF005B8862 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24A81343167C3F620057CBAB /* CoreData.framework */,
 				DC8F289313579EFF005B8862 /* UIKit.framework */,
 				DC8F289513579EFF005B8862 /* Foundation.framework */,
 				DC8F289713579EFF005B8862 /* CoreGraphics.framework */,
@@ -170,6 +190,18 @@
 				DC8F28A913579EFF005B8862 /* ReaderSampleViewController.m */,
 				DC8F28AB13579EFF005B8862 /* ReaderSampleViewController.xib */,
 				DC8F289A13579EFF005B8862 /* Supporting Files */,
+				24A8134B167C42450057CBAB /* StartViewController.h */,
+				24A8134C167C42450057CBAB /* StartViewController.m */,
+				24A8134D167C42450057CBAB /* StartViewController.xib */,
+				24A81350167C42510057CBAB /* PinViewController.h */,
+				24A81351167C42510057CBAB /* PinViewController.m */,
+				24A81352167C42510057CBAB /* PinViewController.xib */,
+				24A81355167C425B0057CBAB /* ScanItemViewController.h */,
+				24A81356167C425B0057CBAB /* ScanItemViewController.m */,
+				24A81357167C425B0057CBAB /* ScanItemViewController.xib */,
+				24A8135A167C42650057CBAB /* ReceiptViewController.h */,
+				24A8135B167C42650057CBAB /* ReceiptViewController.m */,
+				24A8135C167C42650057CBAB /* ReceiptViewController.xib */,
 			);
 			path = ReaderSample;
 			sourceTree = "<group>";
@@ -306,6 +338,10 @@
 				DC8F28D31357A29D005B8862 /* zbar-helpicons.png in Resources */,
 				DC8F28D41357A29D005B8862 /* zbar-samples.png in Resources */,
 				24A8134A167C40280057CBAB /* Default-568h@2x.png in Resources */,
+				24A8134F167C42450057CBAB /* StartViewController.xib in Resources */,
+				24A81354167C42510057CBAB /* PinViewController.xib in Resources */,
+				24A81359167C425B0057CBAB /* ScanItemViewController.xib in Resources */,
+				24A8135E167C42650057CBAB /* ReceiptViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +359,10 @@
 				24A81338167C3ED70057CBAB /* Patron.m in Sources */,
 				24A8133B167C3ED80057CBAB /* Item.m in Sources */,
 				24A81342167C3F2A0057CBAB /* Transaction.m in Sources */,
+				24A8134E167C42450057CBAB /* StartViewController.m in Sources */,
+				24A81353167C42510057CBAB /* PinViewController.m in Sources */,
+				24A81358167C425B0057CBAB /* ScanItemViewController.m in Sources */,
+				24A8135D167C42650057CBAB /* ReceiptViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
