@@ -27,8 +27,8 @@
                        to: 0];
 
     // present and release the controller
-    [self presentModalViewController: reader
-                            animated: YES];
+    [self presentViewController: reader
+                       animated: YES completion:nil];
     [reader release];
 }
 
@@ -51,7 +51,7 @@
     [info objectForKey: UIImagePickerControllerOriginalImage];
 
     // ADD: dismiss the controller (NB dismiss from the *reader*!)
-    [reader dismissModalViewControllerAnimated: YES];
+    [reader dismissViewControllerAnimated: YES completion: nil];
 }
 
 - (BOOL) shouldAutorotateToInterfaceOrientation: (UIInterfaceOrientation) orient
