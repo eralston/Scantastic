@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC8F288E13579EFF005B8862"
                BuildableName = "Scantastic.app"
-               BlueprintName = "Scantastic"
-               ReferencedContainer = "container:Scantastic.xcodeproj">
+               BlueprintName = "scantastic"
+               ReferencedContainer = "container:scantastic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC8F288E13579EFF005B8862"
             BuildableName = "Scantastic.app"
-            BlueprintName = "Scantastic"
-            ReferencedContainer = "container:Scantastic.xcodeproj">
+            BlueprintName = "scantastic"
+            ReferencedContainer = "container:scantastic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC8F288E13579EFF005B8862"
             BuildableName = "Scantastic.app"
-            BlueprintName = "Scantastic"
-            ReferencedContainer = "container:Scantastic.xcodeproj">
+            BlueprintName = "scantastic"
+            ReferencedContainer = "container:scantastic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
