@@ -73,12 +73,17 @@
     NSString *text = symbol.data;
     Library *library = [Library shared];
     Patron *patron = [library findPatronByIdentifier:text];
-    NSLog(@"Found patron %@", [patron name]);
     
-    PinViewController *pinView = [[PinViewController alloc] init];
-    [pinView setTransaction:[library insertNewTransactionForPatron:patron]];
-    [library save];
-    [[self navigationController] pushViewController:pinView animated:YES];
+    if(patron){
+        NSLog(@"Found patron %@", [patron name]);
+    
+        PinViewController *pinView = [[PinViewController alloc] init];
+        [pinView setTransaction:[library insertNewTransactionForPatron:patron]];
+        [library save];
+        [[self navigationController] pushViewController:pinView animated:YES];
+    } else {
+        NSLog(@"Could not find patron with identifier %@", text);
+    }
     
 }
 
