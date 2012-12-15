@@ -21,6 +21,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [[self navigationItem] setTitle:@"Scan Items"];
+        
+        UIBarButtonItem *startOver = [[UIBarButtonItem alloc] initWithTitle:@"Start Over" style:UIBarButtonSystemItemRewind target:self action:@selector(startOver:)];
+        [[self navigationItem] setLeftBarButtonItem:startOver];
     }
     return self;
 }
@@ -36,6 +40,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)startOver
+{
+    [[self navigationController] popToRootViewControllerAnimated:YES];
+}
+
+- (void)startOver:(id)sender
+{
+    [self startOver];
+}
+
 - (IBAction)onAllItemsScanned:(id)sender {
     //advance to the PIN screen
     ReceiptViewController *receiptView = [[ReceiptViewController alloc] init];

@@ -24,6 +24,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        // setup top-right save button
+        
+        [[self navigationItem] setTitle:@"Start"];
     }
     return self;
 }

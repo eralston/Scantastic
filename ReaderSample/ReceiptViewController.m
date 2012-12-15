@@ -10,6 +10,10 @@
 
 @interface ReceiptViewController ()
 {
+    NSTimer *_timer;
+    NSDate *_startDate;
+    NSInteger _timeoutInSeconds;
+    
     IBOutlet UITableView *_optionsTable;
     IBOutlet UILabel *_timerLbl;
 }
@@ -23,6 +27,9 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        [[self navigationItem] setTitle:@"Receipt"];
+        
+        [[self navigationItem] setHidesBackButton:YES];
     }
     return self;
 }
@@ -30,7 +37,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view from its nib.
+    
+    // automatically start a 15 second timer
+    _timeoutInSeconds = 16;
+    _startDate = [[NSDate alloc] init];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                    target:self
+                                                  selector:@selector(pollTime)
+                                                  userInfo:nil
+                                                   repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,6 +59,26 @@
 - (void)startOver
 {
     [[self navigationController] popToRootViewControllerAnimated:YES];
+}
+
+- (void)startOver:(id)sender
+{
+    [self startOver];
+}
+
+#pragma mark - Event-Target Handlers
+
+- (void) pollTime
+{
+    NSDate *now = [[NSDate alloc] init];
+    NSTimeInterval elapsedTime = [now timeIntervalSinceDate:_startDate];
+    NSInteger secondsLeft = floor(_timeoutInSeconds - elapsedTime);
+    if(secondsLeft <= 0) {
+        [self startOver];
+        [_timer invalidate];
+    } else {
+        [_timerLbl setText:[NSString stringWithFormat:@"%d", secondsLeft]];
+    }
 }
 
 #pragma mark - UITableViewDataSource
