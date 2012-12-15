@@ -90,7 +90,15 @@
     if(!cell)
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableCellId];
 
-    [[cell textLabel] setText:@"Hello World!"];
+    NSString *rowText = @"";
+    switch([indexPath row]) {
+        case 0: rowText = @"Print"; break;
+        case 1: rowText = @"E-Mail"; break;
+        case 2: rowText = @"Text Message"; break;
+        case 3: rowText = @"None"; break;
+            
+    }
+    [[cell textLabel] setText:rowText];
     
     return cell;
 }
