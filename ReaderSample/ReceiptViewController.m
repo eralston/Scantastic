@@ -77,7 +77,7 @@
         [self startOver];
         [_timer invalidate];
     } else {
-        [_timerLbl setText:[NSString stringWithFormat:@"%d", secondsLeft]];
+        [_timerLbl setText:[NSString stringWithFormat:@"Time Out in %d Seconds", secondsLeft]];
     }
 }
 

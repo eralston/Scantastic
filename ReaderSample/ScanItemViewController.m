@@ -144,9 +144,19 @@
     return YES;
 }
 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSArray *array = [[[self transaction] items] allObjects];
+    Item *item = [array objectAtIndex:[indexPath row]];
+    [[self transaction] removeItemsObject:item];
+    [[Library shared] save];
     
+    [_table reloadData];
 }
 
 @end
