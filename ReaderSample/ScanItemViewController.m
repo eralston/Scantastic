@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 ZBar Consulting Services. All rights reserved.
 //
 
+#include <AVFoundation/AVFoundation.h>
+
 #import "ScanItemViewController.h"
 
 #import "Item.h"
@@ -19,6 +21,8 @@
     ZBarReaderView *_reader;
     __weak IBOutlet ZBarReaderView *_scanner;
     __weak IBOutlet UITableView *_table;
+
+    AVAudioPlayer *_player;
 }
 
 @end
@@ -46,7 +50,26 @@
     
     [_table setEditing:YES];
     
+    // Create the URL for the source audio file. The URLForResource:withExtension: method is
+    //    new in iOS 4.0.
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource: @"tap"
+                                                ofType: @"caf"];
+    NSURL *soundUrl = [[NSURL alloc] initFileURLWithPath:soundPath];
+    _player = [[AVAudioPlayer alloc] initWithContentsOfURL:soundUrl error:nil];
+    
+    
     // Do any additional setup after loading the view from its nib.
+}
+
+// Respond to a tap on the System Sound button.
+- (void) playSystemSound {
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
+    
+    [_player play];
+    
+    [[AVAudioSession sharedInstance] setActive:YES error:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -112,6 +135,8 @@
         // EXAMPLE: just grab the first barcode
         break;
     [self barcodeScanned:[symbol data]];
+    
+    [self playSystemSound];
     
     [_table reloadData];
 }

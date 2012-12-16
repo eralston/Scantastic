@@ -61,11 +61,6 @@
     [[self navigationController] pushViewController:scanView animated:YES];
 }
 
-- (IBAction)onPinEntered:(id)sender {
-    [self advance];
-}
-
-
 #pragma mark - Key Events
 
 - (void)appendCharacter:(NSString *)ch
