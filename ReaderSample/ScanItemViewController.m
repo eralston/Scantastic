@@ -75,7 +75,12 @@
     [self startOver];
 }
 
-- (IBAction)onAllItemsScanned:(id)sender {
+- (IBAction)onStartOverTouched:(id)sender {
+
+    [self startOver];
+}
+
+- (IBAction)onCheckoutTouched:(id)sender {
     //advance to the PIN screen
     ReceiptViewController *receiptView = [[ReceiptViewController alloc] init];
     [receiptView setTransaction:[self transaction]];
