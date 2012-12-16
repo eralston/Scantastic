@@ -30,9 +30,6 @@
     if (self) {
         // Custom initialization
         [[self navigationItem] setTitle:@"Enter PIN"];
-        
-        UIBarButtonItem *startOver = [[UIBarButtonItem alloc] initWithTitle:@"Start Over" style:UIBarButtonSystemItemRewind target:self action:@selector(startOver:)];
-        [[self navigationItem] setLeftBarButtonItem:startOver];
     }
     return self;
 }
@@ -51,14 +48,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)startOver
+- (IBAction)startOver
 {
     [[self navigationController] popToRootViewControllerAnimated:YES];
-}
-
-- (void)startOver:(id)sender
-{
-    [self startOver];
 }
 
 - (void)advance
